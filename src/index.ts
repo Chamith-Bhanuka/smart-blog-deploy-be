@@ -22,7 +22,7 @@ app.use(express.json()); // Consider all data in a request as a json (Built-In m
 
 app.use(
   cors({
-    origin: ['http://localhost:5173','https://smart-blog-deploy-fe-ten.vercel.app'],
+    origin: ['http://localhost:5173','https://smart-blog-deploy-fe-ten.vercel.app/'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
   })
