@@ -42,6 +42,10 @@ app.use('/api/v1/users', userRoutes);
 app.use('/api/v1/post', postRoutes);
 app.use('/api/v1/post/ai', aiRoutes);
 
+app.use('/', (req, res) => {
+  res.send('Backend is running..!');
+});
+
 mongoose
   .connect(MONGODB_URI)
   .then(() => {
